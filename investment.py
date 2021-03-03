@@ -1,18 +1,20 @@
-""" this method calculates how much money we can make on an investment
+"""
+ this method calculates how much money we can make on an investment
 Parameters:
 principal: decimal, the starting money
 interest_rate: decimal, rate per year
 years: int,  the amount of time you are investing money
 
 Return:
-float - the value of the investment after X number of years"""
+float, the value of the investment after X number of years
+"""
 
 
 def calculate_apr(principal, interest_rate, years):
     "loops through to calculate total after each each year"
-    for i in range(years+1):
+    for i in range(years):
         "variable to hold total amount of money and will be returned"
-        total = principal * (1 + interest_rate) ** i
+        total = principal * (1 + interest_rate) ** (i+1)
 
     "checks if any parameters are invalid and outputs false if so"
     if isinstance(total, float):
@@ -25,4 +27,4 @@ def calculate_apr(principal, interest_rate, years):
 calculate_apr(3500, .03, 65)
 calculate_apr(200, .01, 50)
 calculate_apr(100, .06, 1)
-calculate_apr(100, -.05, 1)
+calculate_apr(200, -.04, 1)
