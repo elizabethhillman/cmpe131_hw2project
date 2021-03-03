@@ -50,5 +50,4 @@ def input_output():
     else:
         quit()
 
-"used for testing"
-input_output()
+

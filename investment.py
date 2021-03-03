@@ -22,9 +22,3 @@ def calculate_apr(principal, interest_rate, years):
     else:
         print("False")
 
-
-"to test function"
-calculate_apr(3500, .03, 65)
-calculate_apr(200, .01, 50)
-calculate_apr(100, .06, 1)
-calculate_apr(200, -.04, 1)
