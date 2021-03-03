@@ -1,18 +1,19 @@
-'''this function computes a certain operation on two numbers based on
-input from user
-
-Parameter:
-number1: given as a string, the first input from second function
-and is first number to be operated on
-number2: given as a string,  the second input from second function
-and is second number to be operated on
-operator: string specified math operator given from user
-
-Return:
-float - result of specified computation from
-'''
-
 def calculator(number1, number2, operator):
+    """this function computes a certain operation on two numbers based on
+    input from user
+
+    Parameter:
+    number1: given as a string, the first input from second function
+    and is first number to be operated on
+    number2: given as a string,  the second input from second function
+    and is second number to be operated on
+    operator: string specified math operator given from user
+
+    Return:
+    float - result of specified computation from
+    """
+
+   
     "have to cast since arguments are strings right now"
     number1 = float(number1)
     number2 = float(number2)
