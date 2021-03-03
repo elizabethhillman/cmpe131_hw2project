@@ -17,7 +17,7 @@ def calculate_apr(principal, interest_rate, years):
         total = principal * (1 + interest_rate) ** (i+1)
 
     "checks if any parameters are invalid and outputs false if so"
-    if isinstance(total, float):
+    if interest_rate > 0:
         return total
     else:
         return False
