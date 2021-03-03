@@ -1,4 +1,4 @@
-''' this method calculates how much money we can make on an investment
+""" this method calculates how much money we can make on an investment
 Parameters:
 principal: decimal - the starting money
 interest_rate: decimal - rate per year
@@ -6,7 +6,7 @@ years: int - the amount of time you are investing money
 
 Return:
 float - the value of the investment after X number of years
-'''
+"""
 
 
 def calculate_apr(principal, interest_rate, years):
@@ -23,5 +23,7 @@ def calculate_apr(principal, interest_rate, years):
 
 
 "to test function"
-calculate_apr(500, .03, 65)
+calculate_apr(3500, .03, 65)
 calculate_apr(200, .01, 50)
+calculate_apr(100, .06, 1)
+calculate_apr(100, -.05, 1)
