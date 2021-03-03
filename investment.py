@@ -1,5 +1,5 @@
 """
- this method calculates how much money we can make on an investment
+this method calculates how much money we can make on an investment
 Parameters:
 principal: decimal, the starting money
 interest_rate: decimal, rate per year
@@ -17,7 +17,7 @@ def calculate_apr(principal, interest_rate, years):
         total = principal * (1 + interest_rate) ** (i+1)
 
     "checks if any parameters are invalid and outputs false if so"
-    if isinstance(total, float):
+    if principal < 0 or (interest_rate+1) < 0 or years < 0:
         return total
     else:
         return False
