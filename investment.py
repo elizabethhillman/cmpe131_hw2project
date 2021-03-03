@@ -18,7 +18,7 @@ def calculate_apr(principal, interest_rate, years):
 
     "checks if any parameters are invalid and outputs false if so"
     if isinstance(total, float):
-        print(total)
+        return total
     else:
-        print("False")
+        return False
 

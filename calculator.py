@@ -14,18 +14,19 @@ def calculator(number1, number2, operator):
 
     "series of elif statements to compute specified operator"
     if operator == "+":
-        print(number1 + number2)
+        return (number1 + number2)
     elif operator == "-":
-        print(number1 - number2)
+        return (number1 - number2)
     elif operator == "*":
-        print(number1 * number2)
+        return (number1 * number2)
     elif operator == "/":
-        print(number1 / number2)
+        return (number1 / number2)
     elif operator == "//":
-        print(number1 // number2)
+        return (number1 // number2)
     elif operator == "**":
-        print(number1 ** number2)
+        return (number1 ** number2)
     else:
+        return False
         quit()
 
 
