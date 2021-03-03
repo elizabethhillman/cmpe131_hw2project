@@ -3,20 +3,14 @@ def calculator(number1, number2, operator):
     input from user
 
     Parameter:
-    number1: given as a string, the first input from second function
+    number1: float, the first input from second function
     and is first number to be operated on
-    number2: given as a string,  the second input from second function
+    number2: float,  the second input from second function
     and is second number to be operated on
     operator: string specified math operator given from user
 
     Return:
-    float - result of specified computation from
-    """
-
-   
-    "have to cast since arguments are strings right now"
-    number1 = float(number1)
-    number2 = float(number2)
+    float - result of specified computation from user"""
 
     "series of elif statements to compute specified operator"
     if operator == "+":
@@ -39,8 +33,8 @@ def calculator(number1, number2, operator):
 parameters for the calculator function'''
 def input_output():
     "to get data from user"
-    num1 = input("Enter the first number: ")
-    num2 = input("Enter the second number: ")
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
     op = input("Enter the operation: ")
 
     "give these inputs to the calculator function to compute"
